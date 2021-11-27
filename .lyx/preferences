@@ -1,0 +1,155 @@
+# LyX 2.3.6.1 generated this file. If you want to make your own
+# modifications you should do them from inside LyX and save.
+
+Format 24
+
+\bind_file "personal"
+
+#
+# MISC SECTION ######################################
+#
+
+\user_name "mirage_neos"
+\user_email ""
+\preview on
+
+#
+# SCREEN & FONTS SECTION ############################
+#
+
+\scroll_below_document true
+\screen_font_sizes 5 7 8 9 10 12 14.4 17.26 20.74 24.88
+\fullscreen_limit true
+\fullscreen_menubar false
+\fullscreen_width 1000
+\single_instance false
+
+#
+# COLOR SECTION ###################################
+#
+
+\set_color "cursor" "#000000"
+\set_color "background" "#ffffff"
+\set_color "foreground" "#000000"
+\set_color "selection" "#999999"
+\set_color "latex" "#0000ff"
+\set_color "preview" "#000000"
+\set_color "note" "#000000"
+\set_color "notebg" "#ffff66"
+\set_color "comment" "#000000"
+\set_color "commentbg" "#ffff66"
+\set_color "greyedout" "#000000"
+\set_color "greyedoutbg" "#cccccc"
+\set_color "shaded" "#6666ff"
+\set_color "depthbar" "#0000ff"
+\set_color "language" "#0000ff"
+\set_color "command" "#000000"
+\set_color "commandbg" "#cccccc"
+\set_color "commandframe" "#cccccc"
+\set_color "special" "#0000ff"
+\set_color "graphicsbg" "#ffffff"
+\set_color "math" "#000080"
+\set_color "mathbg" "#ffffff"
+\set_color "mathmacrobg" "#ffffff"
+\set_color "mathframe" "#000080"
+\set_color "mathcorners" "#000080"
+\set_color "mathline" "#0000ff"
+\set_color "collapsible" "#000000"
+\set_color "collapsibleframe" "#999999"
+\set_color "insetbg" "#ff0080"
+\set_color "insetframe" "#ff0080"
+\set_color "eolmarker" "#0000ff"
+\set_color "added_space" "#0000ff"
+\set_color "appendix" "#0000ff"
+\set_color "changebar" "#0000ff"
+\set_color "tabularonoffline" "#999999"
+\set_color "bottomarea" "#ffffff"
+\set_color "pagebreak" "#0000ff"
+\set_color "buttonframe" "#cccccc"
+\set_color "buttonbg" "#cccccc"
+\set_color "buttonhoverbg" "#999999"
+
+#
+# PRINTER SECTION ###################################
+#
+
+
+#
+# TEX SECTION #######################################
+#
+
+
+#
+# FILE SECTION ######################################
+#
+
+\load_session true
+\completion_inline_delay 0.1
+\completion_inline_dots 13
+\autocorrection_math true
+\completion_popup_text true
+\completion_minlength 5
+\hunspelldir_path "/usr/share/hunspell"
+\plaintext_linelen 0
+
+#
+# PLAIN TEXT EXPORT SECTION ##############################
+#
+
+
+#
+# SPELLCHECKER SECTION ##############################
+#
+
+
+#
+# LANGUAGE SUPPORT SECTION ##########################
+#
+
+\spellcheck_continuously true
+
+#
+# 2nd MISC SUPPORT SECTION ##########################
+#
+
+
+#
+# FORMATS SECTION ##########################
+#
+
+\format "bmp" "bmp" "BMP" "" "eog" "auto" "" "image/x-bmp"
+\format "dia" "dia" "DIA" "" "auto" "auto" "vector,zipped=native" "application/x-dia-diagram"
+\format "excel" "xls" "Excel spreadsheet" "" "" "auto" "document" "application/vnd.ms-excel"
+\format "fen" "fen" "FEN" "" "auto" "auto" "" ""
+\format "fig" "fig" "FIG" "" "auto" "auto" "vector" "application/x-xfig"
+\format "gif" "gif" "GIF" "" "eog" "auto" "" "image/gif"
+\format "gnumeric" "gnumeric" "Gnumeric spreadsheet" "" "" "auto" "document" "application/x-gnumeric"
+\format "agr" "agr" "Grace" "" "auto" "auto" "vector" ""
+\format "html" "html, htm" "HTML" "H" "auto" "" "document,menu=export" "text/html"
+\format "html_table" "html" "HTML Table (for spreadsheets)" "" "" "auto" "document" "text/html"
+\format "jpg" "jpg, jpeg" "JPEG" "" "eog" "auto" "" "image/jpeg"
+\format "xhtml" "xhtml" "LyXHTML" "y" "auto" "" "document,menu=export" "application/xhtml+xml"
+\format "excel2" "xlsx" "MS Excel Office Open XML" "" "" "auto" "document" "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+\format "noteedit" "not" "Noteedit" "" "auto" "auto" "vector" ""
+\format "oocalc" "ods" "OpenDocument spreadsheet" "" "" "auto" "document" "application/vnd.oasis.opendocument.spreadsheet"
+\format "pbm" "pbm" "PBM" "" "eog" "auto" "" "image/x-portable-bitmap"
+\format "pgm" "pgm" "PGM" "" "eog" "auto" "" "image/x-portable-graymap"
+\format "png" "png" "PNG" "" "eog" "auto" "" "image/x-png"
+\format "ppm" "ppm" "PPM" "" "eog" "auto" "" "image/x-portable-pixmap"
+\format "svg" "svg" "SVG" "" "auto" "auto" "vector" "image/svg+xml"
+\format "svgz" "svgz" "SVG (compressed)" "" "auto" "auto" "vector,zipped=native" ""
+\format "tgif" "obj, tgo" "Tgif" "" "auto" "auto" "vector" "application/x-tgif"
+\format "tiff" "tif" "TIFF" "" "eog" "auto" "" "image/tiff"
+\format "xbm" "xbm" "XBM" "" "eog" "auto" "" "image/x-xbitmap"
+\format "xpm" "xpm" "XPM" "" "eog" "auto" "" "image/x-xpixmap"
+
+#
+# CONVERTERS SECTION ##########################
+#
+
+\converter "png" "eps" "magick $$i $$o" ""
+
+#
+# COPIERS SECTION ##########################
+#
+

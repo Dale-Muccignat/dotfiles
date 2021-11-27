@@ -1,0 +1,1918 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%Produced by poppler pdftops version: 21.07.0 (http://poppler.freedesktop.org)
+%%Creator: Matplotlib v3.3.3, https://matplotlib.org
+%%LanguageLevel: 2
+%%DocumentSuppliedResources: (atend)
+%%BoundingBox: 0 0 432 288
+%%HiResBoundingBox: 0 0 432 288
+%%DocumentSuppliedResources: (atend)
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset xpdf 3.00 0
+%%Copyright: Copyright 1996-2011 Glyph & Cog, LLC
+/xpdf 75 dict def xpdf begin
+% PDF special state
+/pdfDictSize 15 def
+/pdfSetup {
+  /setpagedevice where {
+    pop 2 dict begin
+      /Policies 1 dict dup begin /PageSize 6 def end def
+      { /Duplex true def } if
+    currentdict end setpagedevice
+  } {
+    pop
+  } ifelse
+} def
+/pdfSetupPaper {
+  % Change paper size, but only if different from previous paper size otherwise
+  % duplex fails. PLRM specifies a tolerance of 5 pts when matching paper size
+  % so we use the same when checking if the size changes.
+  /setpagedevice where {
+    pop currentpagedevice
+    /PageSize known {
+      2 copy
+      currentpagedevice /PageSize get aload pop
+      exch 4 1 roll
+      sub abs 5 gt
+      3 1 roll
+      sub abs 5 gt
+      or
+    } {
+      true
+    } ifelse
+    {
+      2 array astore
+      2 dict begin
+        /PageSize exch def
+        /ImagingBBox null def
+      currentdict end
+      setpagedevice
+    } {
+      pop pop
+    } ifelse
+  } {
+    pop
+  } ifelse
+} def
+/pdfStartPage {
+  pdfDictSize dict begin
+  /pdfFillCS [] def
+  /pdfFillXform {} def
+  /pdfStrokeCS [] def
+  /pdfStrokeXform {} def
+  /pdfFill [0] def
+  /pdfStroke [0] def
+  /pdfFillOP false def
+  /pdfStrokeOP false def
+  /pdfLastFill false def
+  /pdfLastStroke false def
+  /pdfTextMat [1 0 0 1 0 0] def
+  /pdfFontSize 0 def
+  /pdfCharSpacing 0 def
+  /pdfTextRender 0 def
+  /pdfPatternCS false def
+  /pdfTextRise 0 def
+  /pdfWordSpacing 0 def
+  /pdfHorizScaling 1 def
+  /pdfTextClipPath [] def
+} def
+/pdfEndPage { end } def
+% PDF color state
+/cs { /pdfFillXform exch def dup /pdfFillCS exch def
+      setcolorspace } def
+/CS { /pdfStrokeXform exch def dup /pdfStrokeCS exch def
+      setcolorspace } def
+/sc { pdfLastFill not { pdfFillCS setcolorspace } if
+      dup /pdfFill exch def aload pop pdfFillXform setcolor
+     /pdfLastFill true def /pdfLastStroke false def } def
+/SC { pdfLastStroke not { pdfStrokeCS setcolorspace } if
+      dup /pdfStroke exch def aload pop pdfStrokeXform setcolor
+     /pdfLastStroke true def /pdfLastFill false def } def
+/op { /pdfFillOP exch def
+      pdfLastFill { pdfFillOP setoverprint } if } def
+/OP { /pdfStrokeOP exch def
+      pdfLastStroke { pdfStrokeOP setoverprint } if } def
+/fCol {
+  pdfLastFill not {
+    pdfFillCS setcolorspace
+    pdfFill aload pop pdfFillXform setcolor
+    pdfFillOP setoverprint
+    /pdfLastFill true def /pdfLastStroke false def
+  } if
+} def
+/sCol {
+  pdfLastStroke not {
+    pdfStrokeCS setcolorspace
+    pdfStroke aload pop pdfStrokeXform setcolor
+    pdfStrokeOP setoverprint
+    /pdfLastStroke true def /pdfLastFill false def
+  } if
+} def
+% build a font
+/pdfMakeFont {
+  4 3 roll findfont
+  4 2 roll matrix scale makefont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /Encoding exch def
+    currentdict
+  end
+  definefont pop
+} def
+/pdfMakeFont16 {
+  exch findfont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /WMode exch def
+    currentdict
+  end
+  definefont pop
+} def
+% graphics state operators
+/q { gsave pdfDictSize dict begin } def
+/Q {
+  end grestore
+  /pdfLastFill where {
+    pop
+    pdfLastFill {
+      pdfFillOP setoverprint
+    } {
+      pdfStrokeOP setoverprint
+    } ifelse
+  } if
+} def
+/cm { concat } def
+/d { setdash } def
+/i { setflat } def
+/j { setlinejoin } def
+/J { setlinecap } def
+/M { setmiterlimit } def
+/w { setlinewidth } def
+% path segment operators
+/m { moveto } def
+/l { lineto } def
+/c { curveto } def
+/re { 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+      neg 0 rlineto closepath } def
+/h { closepath } def
+% path painting operators
+/S { sCol stroke } def
+/Sf { fCol stroke } def
+/f { fCol fill } def
+/f* { fCol eofill } def
+% clipping operators
+/W { clip newpath } def
+/W* { eoclip newpath } def
+/Ws { strokepath clip newpath } def
+% text state operators
+/Tc { /pdfCharSpacing exch def } def
+/Tf { dup /pdfFontSize exch def
+      dup pdfHorizScaling mul exch matrix scale
+      pdfTextMat matrix concatmatrix dup 4 0 put dup 5 0 put
+      exch findfont exch makefont setfont } def
+/Tr { /pdfTextRender exch def } def
+/Tp { /pdfPatternCS exch def } def
+/Ts { /pdfTextRise exch def } def
+/Tw { /pdfWordSpacing exch def } def
+/Tz { /pdfHorizScaling exch def } def
+% text positioning operators
+/Td { pdfTextMat transform moveto } def
+/Tm { /pdfTextMat exch def } def
+% text string operators
+/xyshow where {
+  pop
+  /xyshow2 {
+    dup length array
+    0 2 2 index length 1 sub {
+      2 index 1 index 2 copy get 3 1 roll 1 add get
+      pdfTextMat dtransform
+      4 2 roll 2 copy 6 5 roll put 1 add 3 1 roll dup 4 2 roll put
+    } for
+    exch pop
+    xyshow
+  } def
+}{
+  /xyshow2 {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval show moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval show moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/cshow where {
+  pop
+  /xycp {
+    0 3 2 roll
+    {
+      pop pop currentpoint 3 2 roll
+      1 string dup 0 4 3 roll put false charpath moveto
+      2 copy get 2 index 2 index 1 add get
+      pdfTextMat dtransform rmoveto
+      2 add
+    } exch cshow
+    pop pop
+  } def
+}{
+  /xycp {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval false charpath moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval false charpath moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/Tj {
+  fCol
+  0 pdfTextRise pdfTextMat dtransform rmoveto
+  currentpoint 4 2 roll
+  pdfTextRender 1 and 0 eq {
+    2 copy xyshow2
+  } if
+  pdfTextRender 3 and dup 1 eq exch 2 eq or {
+    3 index 3 index moveto
+    2 copy
+    currentfont /FontType get 3 eq { fCol } { sCol } ifelse
+    xycp currentpoint stroke moveto
+  } if
+  pdfTextRender 4 and 0 ne {
+    4 2 roll moveto xycp
+    /pdfTextClipPath [ pdfTextClipPath aload pop
+      {/moveto cvx}
+      {/lineto cvx}
+      {/curveto cvx}
+      {/closepath cvx}
+    pathforall ] def
+    currentpoint newpath moveto
+  } {
+    pop pop pop pop
+  } ifelse
+  0 pdfTextRise neg pdfTextMat dtransform rmoveto
+} def
+/TJm { 0.001 mul pdfFontSize mul pdfHorizScaling mul neg 0
+       pdfTextMat dtransform rmoveto } def
+/TJmV { 0.001 mul pdfFontSize mul neg 0 exch
+        pdfTextMat dtransform rmoveto } def
+/Tclip { pdfTextClipPath cvx exec clip newpath
+         /pdfTextClipPath [] def } def
+/Tclip* { pdfTextClipPath cvx exec eoclip newpath
+         /pdfTextClipPath [] def } def
+% Level 2/3 image operators
+/pdfImBuf 100 string def
+/pdfImStr {
+  2 copy exch length lt {
+    2 copy get exch 1 add exch
+  } {
+    ()
+  } ifelse
+} def
+/skipEOD {
+  { currentfile pdfImBuf readline
+    not { pop exit } if
+    (%-EOD-) eq { exit } if } loop
+} def
+/pdfIm { image skipEOD } def
+/pdfImM { fCol imagemask skipEOD } def
+/pr { 2 index 2 index 3 2 roll putinterval 4 add } def
+/pdfImClip {
+  gsave
+  0 2 4 index length 1 sub {
+    dup 4 index exch 2 copy
+    get 5 index div put
+    1 add 3 index exch 2 copy
+    get 3 index div put
+  } for
+  pop pop rectclip
+} def
+/pdfImClipEnd { grestore } def
+% shading operators
+/colordelta {
+  false 0 1 3 index length 1 sub {
+    dup 4 index exch get 3 index 3 2 roll get sub abs 0.004 gt {
+      pop true
+    } if
+  } for
+  exch pop exch pop
+} def
+/funcCol { func n array astore } def
+/funcSH {
+  dup 0 eq {
+    true
+  } {
+    dup 6 eq {
+      false
+    } {
+      4 index 4 index funcCol dup
+      6 index 4 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      5 index 5 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      6 index 8 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      colordelta or or or
+    } ifelse
+  } ifelse
+  {
+    1 add
+    4 index 3 index add 0.5 mul exch 4 index 3 index add 0.5 mul exch
+    6 index 6 index 4 index 4 index 4 index funcSH
+    2 index 6 index 6 index 4 index 4 index funcSH
+    6 index 2 index 4 index 6 index 4 index funcSH
+    5 3 roll 3 2 roll funcSH pop pop
+  } {
+    pop 3 index 2 index add 0.5 mul 3 index  2 index add 0.5 mul
+    funcCol sc
+    dup 4 index exch mat transform m
+    3 index 3 index mat transform l
+    1 index 3 index mat transform l
+    mat transform l pop pop h f*
+  } ifelse
+} def
+/axialCol {
+  dup 0 lt {
+    pop t0
+  } {
+    dup 1 gt {
+      pop t1
+    } {
+      dt mul t0 add
+    } ifelse
+  } ifelse
+  func n array astore
+} def
+/axialSH {
+  dup 0 eq {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index axialCol 2 index axialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index axialSH
+    exch 3 2 roll axialSH
+  } {
+    pop 2 copy add 0.5 mul
+    axialCol sc
+    exch dup dx mul x0 add exch dy mul y0 add
+    3 2 roll dup dx mul x0 add exch dy mul y0 add
+    dx abs dy abs ge {
+      2 copy yMin sub dy mul dx div add yMin m
+      yMax sub dy mul dx div add yMax l
+      2 copy yMax sub dy mul dx div add yMax l
+      yMin sub dy mul dx div add yMin l
+      h f*
+    } {
+      exch 2 copy xMin sub dx mul dy div add xMin exch m
+      xMax sub dx mul dy div add xMax exch l
+      exch 2 copy xMax sub dx mul dy div add xMax exch l
+      xMin sub dx mul dy div add xMin exch l
+      h f*
+    } ifelse
+  } ifelse
+} def
+/radialCol {
+  dup t0 lt {
+    pop t0
+  } {
+    dup t1 gt {
+      pop t1
+    } if
+  } ifelse
+  func n array astore
+} def
+/radialSH {
+  dup 0 eq {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index dt mul t0 add radialCol
+      2 index dt mul t0 add radialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index radialSH
+    exch 3 2 roll radialSH
+  } {
+    pop 2 copy add 0.5 mul dt mul t0 add
+    radialCol sc
+    encl {
+      exch dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      0 360 arc h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      360 0 arcn h f
+    } {
+      2 copy
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arcn
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arcn h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arc
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arc h f
+    } ifelse
+  } ifelse
+} def
+end
+%%EndResource
+%%EndProlog
+%%BeginSetup
+xpdf begin
+%%BeginResource: font T3_14_0
+8 dict begin
+/FontType 3 def
+/FontMatrix [0.001 0 0 0.001 0 0] def
+/FontBBox [-1021 -463 1794 1233] def
+/Encoding 256 array def
+  0 1 255 { Encoding exch /.notdef put } for
+/BuildGlyph {
+  exch /CharProcs get exch
+  2 copy known not { pop /.notdef } if
+  get exec
+} bind def
+/BuildChar {
+  1 index /Encoding get exch get
+  1 index /BuildGlyph get exec
+} bind def
+/CharProcs 29 dict def
+CharProcs begin
+/E {
+632 0 98 0 568 729 setcachedevice
+q
+98 729 m
+559 729 l
+559 646 l
+197 646 l
+197 430 l
+544 430 l
+544 347 l
+197 347 l
+197 83 l
+568 83 l
+568 0 l
+98 0 l
+98 729 l
+f
+Q
+} def
+/I {
+295 0 98 0 197 729 setcachedevice
+q
+98 0 99 729 re
+f
+Q
+} def
+/L {
+557 0 98 0 552 729 setcachedevice
+q
+98 729 m
+197 729 l
+197 83 l
+552 83 l
+552 0 l
+98 0 l
+98 729 l
+f
+Q
+} def
+/S {
+635 0 66 -13 579 742 setcachedevice
+q
+535 705 m
+535 609 l
+497 627 462 640 429 649 c
+395 657 363 662 333 662 c
+279 662 237 651 208 631 c
+179 610 165 580 165 542 c
+165 510 174 485 194 469 c
+213 452 250 439 304 429 c
+364 417 l
+437 403 491 378 526 343 c
+561 307 579 260 579 201 c
+579 130 555 77 508 41 c
+460 5 391 -13 300 -13 c
+265 -13 228 -9 189 -2 c
+150 5 110 16 69 32 c
+69 134 l
+109 111 148 94 186 83 c
+224 71 262 66 300 66 c
+356 66 399 77 430 99 c
+460 121 476 152 476 194 c
+476 230 465 258 443 278 c
+421 298 385 313 335 323 c
+275 335 l
+201 349 148 372 115 404 c
+82 435 66 478 66 534 c
+66 598 88 649 134 686 c
+179 723 242 742 322 742 c
+356 742 390 739 426 733 c
+461 727 497 717 535 705 c
+f
+Q
+} def
+/V {
+684 0 8 0 676 729 setcachedevice
+q
+286 0 m
+8 729 l
+111 729 l
+342 115 l
+573 729 l
+676 729 l
+398 0 l
+286 0 l
+f
+Q
+} def
+/bracketleft {
+390 0 86 -131 293 760 setcachedevice
+q
+86 760 m
+293 760 l
+293 690 l
+176 690 l
+176 -61 l
+293 -61 l
+293 -131 l
+86 -131 l
+86 760 l
+f
+Q
+} def
+/bracketright {
+390 0 97 -131 304 760 setcachedevice
+q
+304 760 m
+304 -131 l
+97 -131 l
+97 -61 l
+214 -61 l
+214 690 l
+97 690 l
+97 760 l
+304 760 l
+f
+Q
+} def
+/c {
+550 0 55 -13 488 560 setcachedevice
+q
+488 526 m
+488 442 l
+462 456 437 466 411 473 c
+385 480 360 484 334 484 c
+276 484 230 465 198 428 c
+166 391 150 339 150 273 c
+150 206 166 154 198 117 c
+230 80 276 62 334 62 c
+360 62 385 65 411 72 c
+437 79 462 90 488 104 c
+488 21 l
+462 9 436 0 410 -5 c
+383 -10 354 -13 324 -13 c
+242 -13 176 12 128 64 c
+79 115 55 185 55 273 c
+55 362 79 432 128 483 c
+177 534 244 560 330 560 c
+358 560 385 557 411 551 c
+437 545 463 537 488 526 c
+f
+Q
+} def
+/d {
+635 0 55 -13 544 760 setcachedevice
+q
+454 464 m
+454 760 l
+544 760 l
+544 0 l
+454 0 l
+454 82 l
+435 49 411 25 382 10 c
+353 -5 319 -13 279 -13 c
+213 -13 159 13 117 65 c
+75 117 55 187 55 273 c
+55 359 75 428 117 481 c
+159 533 213 560 279 560 c
+319 560 353 552 382 536 c
+411 520 435 496 454 464 c
+148 273 m
+148 207 161 155 188 117 c
+215 79 253 61 301 61 c
+348 61 385 79 413 117 c
+440 155 454 207 454 273 c
+454 339 440 390 413 428 c
+385 466 348 485 301 485 c
+253 485 215 466 188 428 c
+161 390 148 339 148 273 c
+f
+Q
+} def
+/e {
+615 0 55 -13 562 560 setcachedevice
+q
+562 296 m
+562 252 l
+149 252 l
+153 190 171 142 205 110 c
+238 78 284 62 344 62 c
+378 62 412 66 444 74 c
+476 82 509 95 541 113 c
+541 28 l
+509 14 476 3 442 -3 c
+408 -9 373 -13 339 -13 c
+251 -13 182 12 131 62 c
+80 112 55 181 55 268 c
+55 357 79 428 127 481 c
+175 533 241 560 323 560 c
+397 560 455 536 498 489 c
+540 441 562 377 562 296 c
+472 322 m
+471 371 457 410 431 440 c
+404 469 368 484 324 484 c
+274 484 234 469 204 441 c
+174 413 156 373 152 322 c
+472 322 l
+f
+Q
+} def
+/five {
+636 0 77 -13 549 729 setcachedevice
+q
+108 729 m
+495 729 l
+495 646 l
+198 646 l
+198 467 l
+212 472 227 476 241 478 c
+255 480 270 482 284 482 c
+365 482 429 459 477 415 c
+525 370 549 310 549 234 c
+549 155 524 94 475 51 c
+426 8 357 -13 269 -13 c
+238 -13 207 -10 175 -6 c
+143 -1 111 6 77 17 c
+77 116 l
+106 100 136 88 168 80 c
+199 72 232 69 267 69 c
+323 69 368 83 401 113 c
+433 143 450 183 450 234 c
+450 284 433 324 401 354 c
+368 384 323 399 267 399 c
+241 399 214 396 188 390 c
+162 384 135 375 108 363 c
+108 729 l
+f
+Q
+} def
+/four {
+636 0 49 0 580 729 setcachedevice
+q
+378 643 m
+129 254 l
+378 254 l
+378 643 l
+352 729 m
+476 729 l
+476 254 l
+580 254 l
+580 172 l
+476 172 l
+476 0 l
+378 0 l
+378 172 l
+49 172 l
+49 267 l
+352 729 l
+f
+Q
+} def
+/g {
+635 0 55 -207 544 560 setcachedevice
+q
+454 280 m
+454 344 440 395 414 431 c
+387 467 349 485 301 485 c
+253 485 215 467 188 431 c
+161 395 148 344 148 280 c
+148 215 161 165 188 129 c
+215 93 253 75 301 75 c
+349 75 387 93 414 129 c
+440 165 454 215 454 280 c
+544 68 m
+544 -24 523 -93 482 -139 c
+440 -184 377 -207 292 -207 c
+260 -207 231 -204 203 -200 c
+175 -195 147 -188 121 -178 c
+121 -91 l
+147 -105 173 -115 199 -122 c
+225 -129 251 -133 278 -133 c
+336 -133 380 -117 410 -87 c
+439 -56 454 -10 454 52 c
+454 96 l
+435 64 411 40 382 24 c
+353 8 319 0 279 0 c
+211 0 157 25 116 76 c
+75 127 55 195 55 280 c
+55 364 75 432 116 483 c
+157 534 211 560 279 560 c
+319 560 353 552 382 536 c
+411 520 435 496 454 464 c
+454 547 l
+544 547 l
+544 68 l
+f
+Q
+} def
+/i {
+278 0 94 0 184 760 setcachedevice
+q
+94 547 m
+184 547 l
+184 0 l
+94 0 l
+94 547 l
+94 760 m
+184 760 l
+184 646 l
+94 646 l
+94 760 l
+f
+Q
+} def
+/k {
+579 0 91 0 576 760 setcachedevice
+q
+91 760 m
+181 760 l
+181 311 l
+449 547 l
+564 547 l
+274 291 l
+576 0 l
+459 0 l
+181 267 l
+181 0 l
+91 0 l
+91 760 l
+f
+Q
+} def
+/l {
+278 0 94 0 184 760 setcachedevice
+q
+94 0 90 760 re
+f
+Q
+} def
+/n {
+634 0 91 0 549 560 setcachedevice
+q
+549 330 m
+549 0 l
+459 0 l
+459 327 l
+459 379 448 417 428 443 c
+408 469 378 482 338 482 c
+289 482 251 466 223 435 c
+195 404 181 362 181 309 c
+181 0 l
+91 0 l
+91 547 l
+181 547 l
+181 462 l
+202 494 227 519 257 535 c
+286 551 320 560 358 560 c
+420 560 468 540 500 501 c
+532 462 549 405 549 330 c
+f
+Q
+} def
+/o {
+612 0 55 -13 557 560 setcachedevice
+q
+306 484 m
+258 484 220 465 192 427 c
+164 389 150 338 150 273 c
+150 207 163 156 191 118 c
+219 80 257 62 306 62 c
+354 62 392 80 420 118 c
+448 156 462 207 462 273 c
+462 337 448 389 420 427 c
+392 465 354 484 306 484 c
+306 560 m
+384 560 445 534 490 484 c
+534 433 557 363 557 273 c
+557 183 534 113 490 63 c
+445 12 384 -13 306 -13 c
+227 -13 165 12 121 63 c
+77 113 55 183 55 273 c
+55 363 77 433 121 484 c
+165 534 227 560 306 560 c
+f
+Q
+} def
+/one {
+636 0 110 0 544 729 setcachedevice
+q
+124 83 m
+285 83 l
+285 639 l
+110 604 l
+110 694 l
+284 729 l
+383 729 l
+383 83 l
+544 83 l
+544 0 l
+124 0 l
+124 83 l
+f
+Q
+} def
+/r {
+411 0 91 0 411 560 setcachedevice
+q
+411 463 m
+401 469 390 473 378 476 c
+366 478 353 480 339 480 c
+288 480 249 463 222 430 c
+194 397 181 350 181 288 c
+181 0 l
+91 0 l
+91 547 l
+181 547 l
+181 462 l
+199 495 224 520 254 536 c
+284 552 321 560 365 560 c
+371 560 378 559 386 559 c
+393 558 401 557 411 555 c
+411 463 l
+f
+Q
+} def
+/s {
+521 0 54 -13 472 560 setcachedevice
+q
+443 531 m
+443 446 l
+417 458 391 468 364 475 c
+336 481 308 485 279 485 c
+234 485 200 478 178 464 c
+156 450 145 430 145 403 c
+145 382 153 366 169 354 c
+185 342 217 330 265 320 c
+296 313 l
+360 299 405 279 432 255 c
+458 230 472 195 472 151 c
+472 100 452 60 412 31 c
+372 1 316 -13 246 -13 c
+216 -13 186 -10 154 -5 c
+122 0 89 8 54 20 c
+54 113 l
+87 95 120 82 152 74 c
+184 65 216 61 248 61 c
+290 61 323 68 346 82 c
+368 96 380 117 380 144 c
+380 168 371 187 355 200 c
+339 213 303 226 247 238 c
+216 245 l
+160 257 119 275 95 299 c
+70 323 58 356 58 399 c
+58 450 76 490 112 518 c
+148 546 200 560 268 560 c
+301 560 332 557 362 552 c
+391 547 418 540 443 531 c
+f
+Q
+} def
+/six {
+636 0 70 -13 573 742 setcachedevice
+q
+330 404 m
+286 404 251 388 225 358 c
+199 328 186 286 186 234 c
+186 181 199 139 225 109 c
+251 79 286 64 330 64 c
+374 64 409 79 435 109 c
+461 139 474 181 474 234 c
+474 286 461 328 435 358 c
+409 388 374 404 330 404 c
+526 713 m
+526 623 l
+501 635 476 644 451 650 c
+425 656 400 659 376 659 c
+310 659 260 637 226 593 c
+192 549 172 482 168 394 c
+187 422 211 444 240 459 c
+269 474 301 482 336 482 c
+409 482 467 459 509 415 c
+551 371 573 310 573 234 c
+573 159 550 99 506 54 c
+462 9 403 -13 330 -13 c
+246 -13 181 19 137 83 c
+92 147 70 241 70 364 c
+70 479 97 571 152 639 c
+206 707 280 742 372 742 c
+396 742 421 739 447 735 c
+472 730 498 723 526 713 c
+f
+Q
+} def
+/space {
+318 0 0 0 0 0 setcachedevice
+q
+Q
+} def
+/t {
+392 0 27 0 368 702 setcachedevice
+q
+183 702 m
+183 547 l
+368 547 l
+368 477 l
+183 477 l
+183 180 l
+183 135 189 106 201 94 c
+213 81 238 75 276 75 c
+368 75 l
+368 0 l
+276 0 l
+206 0 158 13 132 39 c
+106 65 93 112 93 180 c
+93 477 l
+27 477 l
+27 547 l
+93 547 l
+93 702 l
+183 702 l
+f
+Q
+} def
+/three {
+636 0 76 -13 556 742 setcachedevice
+q
+406 393 m
+453 383 490 362 516 330 c
+542 298 556 258 556 212 c
+556 140 531 84 482 45 c
+432 6 362 -13 271 -13 c
+240 -13 208 -10 176 -4 c
+144 1 110 10 76 22 c
+76 117 l
+103 101 133 89 166 81 c
+198 73 232 69 268 69 c
+330 69 377 81 409 105 c
+441 129 458 165 458 212 c
+458 254 443 288 413 312 c
+383 336 341 349 287 349 c
+202 349 l
+202 430 l
+291 430 l
+339 430 376 439 402 459 c
+428 478 441 506 441 543 c
+441 580 427 609 401 629 c
+374 649 336 659 287 659 c
+260 659 231 656 200 650 c
+169 644 135 635 98 623 c
+98 711 l
+135 721 170 729 203 734 c
+235 739 266 742 296 742 c
+370 742 429 725 473 691 c
+517 657 539 611 539 553 c
+539 513 527 479 504 451 c
+481 423 448 403 406 393 c
+f
+Q
+} def
+/two {
+636 0 73 0 536 742 setcachedevice
+q
+192 83 m
+536 83 l
+536 0 l
+73 0 l
+73 83 l
+110 121 161 173 226 239 c
+290 304 331 346 348 365 c
+380 400 402 430 414 455 c
+426 479 433 504 433 528 c
+433 566 419 598 392 622 c
+365 646 330 659 286 659 c
+255 659 222 653 188 643 c
+154 632 117 616 78 594 c
+78 694 l
+118 710 155 722 189 730 c
+223 738 255 742 284 742 c
+359 742 419 723 464 685 c
+509 647 532 597 532 534 c
+532 504 526 475 515 449 c
+504 422 484 390 454 354 c
+446 344 420 317 376 272 c
+332 227 271 164 192 83 c
+f
+Q
+} def
+/w {
+818 0 42 0 776 547 setcachedevice
+q
+42 547 m
+132 547 l
+244 120 l
+356 547 l
+462 547 l
+574 120 l
+686 547 l
+776 547 l
+633 0 l
+527 0 l
+409 448 l
+291 0 l
+185 0 l
+42 547 l
+f
+Q
+} def
+/y {
+592 0 30 -207 562 547 setcachedevice
+q
+322 -50 m
+296 -114 271 -157 247 -177 c
+223 -197 191 -207 151 -207 c
+79 -207 l
+79 -132 l
+132 -132 l
+156 -132 175 -126 189 -114 c
+203 -102 218 -75 235 -31 c
+251 9 l
+30 547 l
+125 547 l
+296 119 l
+467 547 l
+562 547 l
+322 -50 l
+f
+Q
+} def
+/zero {
+636 0 66 -13 570 742 setcachedevice
+q
+318 664 m
+267 664 229 639 203 589 c
+177 539 165 464 165 364 c
+165 264 177 189 203 139 c
+229 89 267 64 318 64 c
+369 64 407 89 433 139 c
+458 189 471 264 471 364 c
+471 464 458 539 433 589 c
+407 639 369 664 318 664 c
+318 742 m
+399 742 461 709 505 645 c
+548 580 570 486 570 364 c
+570 241 548 147 505 83 c
+461 19 399 -13 318 -13 c
+236 -13 173 19 130 83 c
+87 147 66 241 66 364 c
+66 486 87 580 130 645 c
+173 709 236 742 318 742 c
+f
+Q
+} def
+end
+currentdict end
+/T3_14_0 exch definefont pop
+%%EndResource
+/F14_0 /T3_14_0 1 1
+[ /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quoteright
+  /parenleft/parenright/asterisk/plus/comma/hyphen/period/slash
+  /zero/one/two/three/four/five/six/seven
+  /eight/nine/colon/semicolon/less/equal/greater/question
+  /at/A/B/C/D/E/F/G
+  /H/I/J/K/L/M/N/O
+  /P/Q/R/S/T/U/V/W
+  /X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore
+  /quoteleft/a/b/c/d/e/f/g
+  /h/i/j/k/l/m/n/o
+  /p/q/r/s/t/u/v/w
+  /x/y/z/braceleft/bar/braceright/asciitilde/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/exclamdown/cent/sterling/fraction/yen/florin/section
+  /currency/quotesingle/quotedblleft/guillemotleft/guilsinglleft/guilsinglright/fi/fl
+  /.notdef/endash/dagger/daggerdbl/periodcentered/.notdef/paragraph/bullet
+  /quotesinglbase/quotedblbase/quotedblright/guillemotright/ellipsis/perthousand/.notdef/questiondown
+  /.notdef/grave/acute/circumflex/tilde/macron/breve/dotaccent
+  /dieresis/.notdef/ring/cedilla/.notdef/hungarumlaut/ogonek/caron
+  /emdash/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/AE/.notdef/ordfeminine/.notdef/.notdef/.notdef/.notdef
+  /Lslash/Oslash/OE/ordmasculine/.notdef/.notdef/.notdef/.notdef
+  /.notdef/ae/.notdef/.notdef/.notdef/dotlessi/.notdef/.notdef
+  /lslash/oslash/oe/germandbls/.notdef/.notdef/.notdef/.notdef]
+pdfMakeFont
+%%EndSetup
+pdfStartPage
+%%EndPageSetup
+[] 0 d
+1 i
+0 j
+0 J
+10 M
+1 w
+/DeviceGray {} cs
+[0] sc
+/DeviceGray {} CS
+[0] SC
+false op
+false OP
+{} settransfer
+0 0 432 288 re
+W
+q
+1 j
+/DeviceGray {} cs
+[1] sc
+0 j
+0 w
+/DeviceGray {} CS
+[0] SC
+/DeviceGray {} cs
+[1] sc
+0 0 432 288 re
+f
+65.190173 42.734646 363.975181 242.430708 re
+f
+q
+65.190173 42.734646 363.975181 242.430709 re
+W
+1 j
+1 w
+/DeviceGray {} CS
+[0] SC
+/DeviceRGB {} cs
+[0 0 0] sc
+418.86417 152.624771 m
+417.514964 142.220733 l
+416.840362 134.237078 l
+416.165759 133.2617 l
+415.491156 127.409428 l
+413.467348 117.908518 l
+412.792745 116.174512 l
+412.118142 115.993886 l
+411.443539 109.780363 l
+410.768937 108.804985 l
+410.094334 104.578344 l
+409.419731 101.579958 l
+408.070526 97.425568 l
+407.395923 94.716183 l
+406.72132 92.620925 l
+406.046717 91.212045 l
+405.372114 90.272792 l
+404.697512 87.418906 l
+404.022909 87.780158 l
+403.348306 84.565021 l
+402.673703 82.831014 l
+401.999101 82.108512 l
+401.324498 80.19388 l
+400.649895 77.845746 l
+399.975292 78.748874 l
+399.300689 77.014868 l
+398.626087 77.050993 l
+397.951484 77.303869 l
+396.602278 72.390851 l
+395.927676 72.788227 l
+395.253073 74.413858 l
+394.57847 69.50084 l
+393.903867 69.970467 l
+392.554662 67.297207 l
+391.880059 67.008206 l
+391.205456 66.466329 l
+390.530853 66.466329 l
+389.856251 64.443322 l
+389.181648 64.876823 l
+388.507045 63.142817 l
+387.832442 63.467943 l
+387.15784 62.348064 l
+386.483237 62.781566 l
+385.808634 62.456439 l
+385.134031 60.722433 l
+384.459428 61.300435 l
+383.784826 60.722433 l
+383.110223 61.26431 l
+382.43562 59.891555 l
+381.761017 60.469557 l
+381.086415 58.374299 l
+379.737209 59.169052 l
+379.062606 57.687922 l
+378.388003 57.904673 l
+377.713401 56.242917 l
+377.038798 56.929294 l
+376.364195 56.712543 l
+375.689592 57.435046 l
+375.01499 56.062291 l
+374.340387 56.062291 l
+373.665784 57.218295 l
+372.991181 55.520414 l
+371.641976 55.809415 l
+370.967373 56.062291 l
+370.29277 55.086912 l
+369.618167 54.545035 l
+368.943565 54.36441 l
+368.268962 54.653411 l
+367.594359 54.075409 l
+366.919756 54.111534 l
+366.245153 53.352906 l
+365.570551 54.147659 l
+364.895948 53.063905 l
+364.221345 53.425156 l
+363.546742 53.425156 l
+362.87214 53.17228 l
+362.197537 53.280656 l
+361.522934 53.605782 l
+360.848331 52.522028 l
+360.173729 53.280656 l
+359.499126 53.208405 l
+358.14992 52.666528 l
+357.475317 52.702654 l
+356.800715 52.088526 l
+355.451509 52.522028 l
+354.776906 52.341402 l
+354.102304 52.883279 l
+353.427701 52.233027 l
+352.753098 51.980151 l
+351.403892 52.558153 l
+350.72929 51.799525 l
+350.054687 52.016276 l
+349.380084 51.83565 l
+348.705481 51.438274 l
+348.030879 51.83565 l
+347.356276 52.088526 l
+346.681673 52.052401 l
+346.00707 51.402149 l
+345.332467 51.83565 l
+344.657865 51.6189 l
+343.983262 51.149273 l
+343.308659 51.69115 l
+341.959454 51.799525 l
+341.284851 51.329899 l
+340.610248 51.980151 l
+339.935645 51.582774 l
+339.261042 51.582774 l
+338.58644 51.257648 l
+337.911837 51.221523 l
+337.237234 51.366024 l
+336.562631 51.004772 l
+335.888029 51.366024 l
+335.213426 52.124651 l
+334.538823 51.7634 l
+333.86422 51.871776 l
+333.189618 51.582774 l
+332.515015 51.944026 l
+331.165809 51.474399 l
+330.491206 51.871776 l
+329.816604 51.727275 l
+329.142001 52.124651 l
+328.467398 51.727275 l
+327.792795 52.016276 l
+325.768987 51.907901 l
+325.094384 52.088526 l
+324.419781 52.558153 l
+323.745179 51.799525 l
+323.070576 52.016276 l
+322.395973 52.088526 l
+321.72137 52.955529 l
+321.046768 52.413652 l
+320.372165 52.305277 l
+319.697562 52.630403 l
+319.022959 52.522028 l
+318.348356 52.233027 l
+317.673754 53.244531 l
+316.999151 53.244531 l
+316.324548 52.666528 l
+315.649945 53.569657 l
+314.975343 53.533532 l
+314.30074 53.10003 l
+313.626137 53.822533 l
+312.951534 53.208405 l
+312.276931 54.075409 l
+310.927726 54.256034 l
+310.253123 53.822533 l
+308.903918 54.43666 l
+308.229315 54.400535 l
+307.554712 53.822533 l
+306.880109 54.689536 l
+306.205506 54.689536 l
+305.530904 55.159163 l
+304.856301 54.870162 l
+303.507095 56.062291 l
+302.832493 56.459667 l
+302.15789 55.520414 l
+301.483287 56.712543 l
+300.808684 57.037669 l
+300.134082 55.91779 l
+299.459479 56.784794 l
+298.784876 56.640293 l
+298.110273 56.857044 l
+297.43567 57.976923 l
+296.761068 57.976923 l
+296.086465 58.699426 l
+295.411862 58.5188 l
+294.737259 57.796297 l
+294.062657 58.735551 l
+293.388054 58.049173 l
+292.713451 58.916176 l
+292.038848 60.325057 l
+291.364245 61.155935 l
+290.689643 60.325057 l
+290.01504 60.686308 l
+289.340437 62.275814 l
+287.991232 61.878437 l
+287.316629 62.420314 l
+286.642026 63.323443 l
+285.967423 64.515572 l
+284.618218 63.612444 l
+283.943615 63.973695 l
+283.269012 65.129699 l
+282.594409 65.129699 l
+281.245204 67.477833 l
+280.570601 67.550083 l
+279.895998 67.839084 l
+279.221395 70.403969 l
+278.546793 69.211839 l
+277.87219 70.440094 l
+277.197587 70.331718 l
+276.522984 71.415472 l
+275.848382 72.896603 l
+275.173779 73.546855 l
+274.499176 74.016482 l
+273.824573 73.655231 l
+273.149971 75.678238 l
+272.475368 79.507502 l
+271.800765 78.206997 l
+271.126162 79.00175 l
+270.451559 80.302255 l
+269.776957 81.133133 l
+269.102354 82.578138 l
+268.427751 82.650389 l
+267.753148 85.251398 l
+267.078546 84.167644 l
+266.403943 85.8294 l
+265.72934 90.597918 l
+265.054737 89.189038 l
+264.380134 91.10367 l
+263.705532 91.392671 l
+263.030929 94.463307 l
+262.356326 95.438686 l
+261.681723 97.100442 l
+261.007121 95.944438 l
+260.332518 97.317193 l
+259.657915 102.049585 l
+258.983312 102.302461 l
+258.308709 104.795095 l
+257.634107 104.433844 l
+256.959504 105.589848 l
+256.284901 108.082482 l
+255.610298 107.396105 l
+254.935696 108.407608 l
+254.261093 106.673602 l
+253.58649 106.384601 l
+251.562682 82.975515 l
+250.213476 62.74544 l
+249.538873 56.098416 l
+248.189668 50.607396 l
+247.515065 49.848768 l
+246.16586 49.595892 l
+88.30881 49.668142 l
+87.634207 50.029394 l
+86.959605 51.402149 l
+86.285002 55.195288 l
+85.610399 66.285703 l
+84.935796 91.862298 l
+84.261193 136.910338 l
+82.911988 256.520653 l
+82.237385 278.304108 l
+81.562782 260.855669 l
+80.213577 142.256858 l
+79.538974 95.908312 l
+78.864371 66.466329 l
+78.189768 53.967033 l
+77.515166 51.149273 l
+76.840563 49.776518 l
+76.16596 49.632017 l
+75.491357 49.632017 l
+75.491357 49.632017 l
+S
+Q
+q
+/DeviceGray {} cs
+[0] sc
+1 j
+0.5 w
+/DeviceGray {} CS
+[0] SC
+/DeviceGray {} cs
+[0] sc
+82.237385 42.734646 m
+82.237385 45.234646 l
+f
+82.237385 42.734646 m
+82.237385 45.234646 l
+S
+1 w
+q
+[1 0 0 1 77.737385 28.594021] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+149.697663 42.734646 m
+149.697663 45.234646 l
+f
+149.697663 42.734646 m
+149.697663 45.234646 l
+S
+1 w
+q
+[1 0 0 1 140.697663 28.594021] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(1)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+217.15794 42.734646 m
+217.15794 45.234646 l
+f
+217.15794 42.734646 m
+217.15794 45.234646 l
+S
+1 w
+q
+[1 0 0 1 208.15794 28.594021] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(2)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+284.618218 42.734646 m
+284.618218 45.234646 l
+f
+284.618218 42.734646 m
+284.618218 45.234646 l
+S
+1 w
+q
+[1 0 0 1 275.618218 28.594021] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(3)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+352.078495 42.734646 m
+352.078495 45.234646 l
+f
+352.078495 42.734646 m
+352.078495 45.234646 l
+S
+1 w
+q
+[1 0 0 1 343.078495 28.594021] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(4)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+419.538773 42.734646 m
+419.538773 45.234646 l
+f
+419.538773 42.734646 m
+419.538773 45.234646 l
+S
+1 w
+q
+[1 0 0 1 410.538773 28.594021] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(5)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+[1 0 0 1 0 0] Tm
+0 0 Td
+125.294951 7.250271 Td
+/F14_0 19 Tf
+(Electron Energy Loss [eV])
+[12.008
+0
+5.282
+0
+11.685
+0
+10.45
+0
+7.448
+0
+7.809
+0
+11.628
+0
+12.046
+0
+6.042
+0
+12.008
+0
+12.046
+0
+11.685
+0
+7.809
+0
+12.065
+0
+11.248
+0
+6.042
+0
+10.583
+0
+11.628
+0
+9.899
+0
+9.899
+0
+6.042
+0
+7.41
+0
+11.685
+0
+12.996
+0
+7.41
+0] Tj
+0.5 w
+65.190173 49.595892 m
+67.690173 49.595892 l
+f
+65.190173 49.595892 m
+67.690173 49.595892 l
+S
+1 w
+q
+[1 0 0 1 52.690173 44.27558] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+65.190173 85.721025 m
+67.690173 85.721025 l
+f
+65.190173 85.721025 m
+67.690173 85.721025 l
+S
+1 w
+q
+[1 0 0 1 25.690173 80.400712] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(1)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+17.814453 0.609375 Td
+(0)
+[8.904
+0] Tj
+26.72168 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+65.190173 121.846158 m
+67.690173 121.846158 l
+f
+65.190173 121.846158 m
+67.690173 121.846158 l
+S
+1 w
+q
+[1 0 0 1 25.690173 116.525845] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(2)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+17.814453 0.609375 Td
+(0)
+[8.904
+0] Tj
+26.72168 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+65.190173 157.971291 m
+67.690173 157.971291 l
+f
+65.190173 157.971291 m
+67.690173 157.971291 l
+S
+1 w
+q
+[1 0 0 1 25.690173 152.650978] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(3)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+17.814453 0.609375 Td
+(0)
+[8.904
+0] Tj
+26.72168 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+65.190173 194.096423 m
+67.690173 194.096423 l
+f
+65.190173 194.096423 m
+67.690173 194.096423 l
+S
+1 w
+q
+[1 0 0 1 25.690173 188.776111] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(4)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+17.814453 0.609375 Td
+(0)
+[8.904
+0] Tj
+26.72168 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+65.190173 230.221556 m
+67.690173 230.221556 l
+f
+65.190173 230.221556 m
+67.690173 230.221556 l
+S
+1 w
+q
+[1 0 0 1 25.690173 224.901244] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(5)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+17.814453 0.609375 Td
+(0)
+[8.904
+0] Tj
+26.72168 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+0.5 w
+65.190173 266.346689 m
+67.690173 266.346689 l
+f
+65.190173 266.346689 m
+67.690173 266.346689 l
+S
+1 w
+q
+[1 0 0 1 25.690173 261.026376] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+0 0.609375 Td
+/F14_0 14 Tf
+(6)
+[8.904
+0] Tj
+8.907227 0.609375 Td
+(0)
+[8.904
+0] Tj
+17.814453 0.609375 Td
+(0)
+[8.904
+0] Tj
+26.72168 0.609375 Td
+(0)
+[8.904
+0] Tj
+Q
+[1 0 0 1 0 0] Tm
+0 0 Td
+[0 1 -1 0 17.737048 122.582812] Tm
+0 0 Td
+0 0 Td
+/F14_0 19 Tf
+(Intensity)
+[5.605
+0
+12.046
+0
+7.448
+0
+11.685
+0
+12.046
+0
+9.899
+0
+5.282
+0
+7.448
+0
+11.248
+0] Tj
+2 J
+0 j
+/DeviceRGB {} cs
+[0 0 0] sc
+65.190173 42.734646 m
+65.190173 285.165354 l
+S
+0.8 w
+429.165354 42.734646 m
+429.165354 285.165354 l
+S
+1 w
+65.190173 42.734646 m
+429.165354 42.734646 l
+S
+0.8 w
+65.190173 285.165354 m
+429.165354 285.165354 l
+S
+0 J
+/DeviceGray {} cs
+[1] sc
+1 w
+/DeviceGray {} cs
+[1] sc
+306.502854 242.218479 115.6625 35.946875 re
+f
+306.502854 242.218479 115.6625 35.946875 re
+S
+1.75 w
+/DeviceRGB {} cs
+[0 0 0] sc
+317.702854 261.224729 m
+345.702854 261.224729 l
+S
+/DeviceGray {} cs
+[0] sc
+1 j
+1 w
+/DeviceGray {} cs
+[0] sc
+[1 0 0 1 0 0] Tm
+0 0 Td
+356.902854 256.324729 Td
+/F14_0 14 Tf
+(Skewed)
+[8.89
+0
+8.106
+0
+8.61
+0
+11.452
+0
+8.61
+0
+8.89
+0] Tj
+Q
+Q
+showpage
+%%PageTrailer
+pdfEndPage
+%%Trailer
+end
+%%DocumentSuppliedResources:
+%%+ font T3_14_0
+%%EOF
