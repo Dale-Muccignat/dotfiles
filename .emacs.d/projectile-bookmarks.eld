@@ -1,1 +1,1 @@
-("~/.emacs.d/julia-funcobs/")
+("~/Downloads/ArchLinux/ArchMirage/" "~/ownCloud/OneDrive/Packages/PsFormation/" "~/.emacs.d/julia-funcobs/")

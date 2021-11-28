@@ -305,7 +305,7 @@ exec --no-startup-id nitrogen --restore &
 exec --no-startup-id xrandr --output DVI-D-1 --right-of HDMI-1
 focus_follows_mouse no
 # emacs server
-#exec --no-startup-id emacs --daemon
+exec --no-startup-id emacs --daemon
 #reshift
 #exec --no-startup-id redshift -P -O 4000
 #exec --no-startup-id owncloud
