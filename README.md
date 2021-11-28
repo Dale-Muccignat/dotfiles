@@ -14,8 +14,8 @@ dotfiles checkout
 ## Dependents
 
 ```
-sudo pacman -S zsh sshfs firefox picom nitrogen emacs fzf
-yay ttf-nerd-fonts-symbols oh-my-zsh-git
+sudo pacman -S zsh sshfs firefox picom nitrogen emacs fzf xorg-xset
+yay ttf-nerd-fonts-symbols oh-my-zsh-git auto-cputfreq
 ```
 
 ## Post config
@@ -27,4 +27,8 @@ chsh --shell /bin/zsh
 Change wallpaper
 ```
 nitrogen /path/to/wallpaper
+```
+power optimize
+```
+sudo systemctl enable --now auto-cpufreq.service
 ```
