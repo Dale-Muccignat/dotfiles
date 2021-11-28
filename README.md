@@ -14,7 +14,7 @@ dotfiles checkout
 ## Dependents
 
 ```
-sudo pacman -S zsh sshfs firefox picom nitrogen emacs fzf xorg-xset
+sudo pacman -S zsh sshfs firefox picom nitrogen emacs fzf xorg-xset rofi
 yay ttf-nerd-fonts-symbols oh-my-zsh-git auto-cputfreq
 ```
 
