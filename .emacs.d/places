@@ -1,5 +1,9 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/dale/.emacs.d/recentf" . 405)
+(("/home/dale/.emacs.d/recentf" . 549)
+ ("/home/dale/.ssh/config" . 582)
+ ("/home/dale/.julia/config/startup.jl" . 778)
+ ("/home/dale/.zshrc" . 4759)
+ ("/home/dale/.ssh/id_rsa.pub" . 569)
  ("/home/dale/.config/nitrogen/bg-saved.cfg" . 107)
  ("/usr/lib/sysctl.d/50-default.conf" . 696)
  ("/boot/grub/grub.cfg" . 3629)
