@@ -14,8 +14,8 @@ dotfiles checkout
 ## Dependents
 
 ```
-sudo pacman -S zsh sshfs firefox picom nitrogen emacs fzf xorg-xset rofi
-yay ttf-nerd-fonts-symbols oh-my-zsh-git auto-cputfreq
+sudo pacman -S zsh sshfs firefox picom nitrogen emacs fzf xorg-xset rofi ranger
+yay -S ttf-nerd-fonts-symbols oh-my-zsh-git auto-cpufreq
 ```
 
 ## Post config
