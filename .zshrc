@@ -8,12 +8,12 @@ export ZSH="/usr/share/oh-my-zsh/"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="random"
-# ZSH_THEME="sorin"
+ZSH_THEME="sorin"
 #ZSH_THEME="example"
 #ZSH_THEME="fletcherm"
 #ZSH_THEME="wezm"
-# ZSH_THEME="minimal"
-ZSH_THEME="awesomepanda"
+#ZSH_THEME="minimal"
+#ZSH_THEME="awesomepanda"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -132,6 +132,8 @@ alias dotfilesadd='dotfiles add .julia/config/startup.jl .config/picom .config/i
 alias mountdesktop='sshfs desktop:/home/mirage_neos ~/Desktop'
 alias s='stonks -e -t "icon"'
 alias update='sudo pacman -Syu'
+alias dt='date +%Y%m%d.%I%M%S'
+alias backup='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
 ############################
 # * Ranger
 
