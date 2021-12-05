@@ -32,3 +32,7 @@ power optimize
 ```
 sudo systemctl enable --now auto-cpufreq.service
 ```
+Add gitignore
+```
+git config --global core.excludesfile ~/.gitignore
+```
