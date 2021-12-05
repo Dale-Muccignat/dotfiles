@@ -127,12 +127,12 @@ alias j="'julia' --sysimage ${HOME}/.julia/config/custom_sysimage.so"
 alias pop="wine ${HOME}/.wine/dosdevices/c:/Program\ Files/Harzing\'s\ Publish\ or\ Perish\ 7/pop7win.exe &|" 
 ## Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dotfilesadd='dotfiles add .julia/config/startup.jl .config/picom .config/i3blocks .config/i3status .config/i3 .config/ranger .emacs.d .ssh/config .lyx .zshenv .zshrc bin .config/nitrogen'
+alias dotfilesadd='dotfiles add .gitignore .julia/config/startup.jl .config/picom .config/i3blocks .config/i3status .config/i3 .config/ranger .emacs.d .ssh/config .lyx .zshenv .zshrc bin .config/nitrogen'
 ## sshfs
 alias mountdesktop='sshfs desktop:/home/mirage_neos ~/Desktop'
 alias s='stonks -e -t "icon"'
 alias update='sudo pacman -Syu'
-alias dt='date +%Y%m%d.%I%M%S'
+alias dt='date +%Y%m%d.%H%M%S'
 alias backup='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
 ############################
 # * Ranger
