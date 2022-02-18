@@ -134,9 +134,9 @@ alias s='stonks -e -t "icon"'
 alias update='sudo pacman -Syu'
 alias dt='date +%Y%m%d.%H%M%S'
 alias backup='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
-alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
-alias downloadlaptop='rclone sync CloudStor:/Files/OneDrive/Writting ~/ownCloud/OneDrive/Writting --progress'
-alias uploadlaptop='rclone sync ~/ownCloud/OneDrive/Writting CloudStor:/Files/OneDrive/Writting --backup-dir=CloudStor:"/archive/$(dt)" --progress'
+# alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
+alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress'
+alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress'
 ############################
 # * Ranger
 
