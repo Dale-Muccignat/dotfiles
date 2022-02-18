@@ -2,3 +2,7 @@
 *\~
 \#*
 .zsh_history
+.emacs.d/places
+.emacs.d/history
+.emacs.d/recentf
+*~
