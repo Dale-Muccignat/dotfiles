@@ -1,0 +1,3 @@
+/OneDrive/Writting/**
+/OneDrive/Teaching/**
+/OneDrive/Packages/**
