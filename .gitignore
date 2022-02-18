@@ -1,15 +1,8 @@
 .dotfiles
 *\~
 \#*
-<<<<<<< HEAD
 .zsh_history
 .emacs.d/places
 .emacs.d/history
 .emacs.d/recentf
 *~
-=======
-*~
-.zsh_history
-.emacs.d/history
-.emacs.d/recentf
->>>>>>> 58158d3 (update)
