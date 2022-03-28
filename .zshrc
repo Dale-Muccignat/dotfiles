@@ -106,10 +106,10 @@ alias ohmyzsh="nano ~/.oh-my-zsh"
 
 # Rsync/ssh
 alias hpc="ssh hpc"
-alias h2l="rsync -aP --exclude='.*' hpc:~/ ~/ownCloud/OneDrive/HPC"
-alias l2h="rsync -aP --exclude='.*' ~/ownCloud/OneDrive//HPC/ hpc:~"
+alias h2l="rsync -aP --exclude='.*' hpc:~/ ~/HPC"
+alias l2h="rsync -aP --exclude='.*' ~/HPC/ hpc:~"
 alias p2h="rsync -aP ~/ownCloud/OneDrive/Packages/ hpc:~/Packages"
-alias p2l="rsync -aP ~/ownCloud/OneDrive/Packages/ ~/ownCloud/OneDrive/HPC/Packages"
+alias p2l="rsync -aP ~/ownCloud/OneDrive/Packages/ ~//HPC/Packages"
 
 # git
 alias gs="git status"
