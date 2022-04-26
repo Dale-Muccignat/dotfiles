@@ -72,7 +72,8 @@ ext x?html?, has midori,           X, flag f = midori -- "$@"
 ext x?html?, has opera,            X, flag f = opera -- "$@"
 ext x?html?, has firefox,          X, flag f = firefox -- "$@"
 ext x?html?, has seamonkey,        X, flag f = seamonkey -- "$@"
-ext x?html?, has iceweasel,        X, flag f = iceweasel -- "$@ext x?html?, has chromium-browser, X, flag f = chromium-browser -- "$@"
+ext x?html?, has iceweasel,        X, flag f = iceweasel -- "$@"
+ext x?html?, has chromium-browser, X, flag f = chromium-browser -- "$@"
 ext x?html?, has chromium,         X, flag f = chromium -- "$@"
 ext x?html?, has google-chrome,    X, flag f = google-chrome -- "$@"
 ext x?html?, has epiphany,         X, flag f = epiphany -- "$@"
@@ -87,7 +88,7 @@ ext x?html?, has w3m,               terminal = w3m "$@"
 # Misc
 #-------------------------------------------
 # Define the "editor" for text files as first action
-mime ^text,  label editor, flag f = ${VISUAL:-$EDITOR} -- "$@" 
+mime ^text,  label editor, flag f = vim -- "$@" 
 mime ^text,  label pager  = "$PAGER" -- "$@"
 !mime ^text, label editor, flag f, ext xml|json|csv|tex|py|pl|rb|js|sh|php = ${VISUAL:-$EDITOR} -- "$@" 
 !mime ^text, label pager,  ext xml|json|csv|tex|py|pl|rb|js|sh|php = "$PAGER" -- "$@"
@@ -280,7 +281,8 @@ label pager,  !mime ^text, !ext xml|json|csv|tex|py|pl|rb|js|sh|php  = "$PAGER" 
 
 # Execute a file as program/script.
 mime application/x-executable = "$1"
-X, flag f = emacsclient -c "$@" 
+# X, flag f = emacsclient -c "$@" 
+X, flag f = vim "$@"
 # Move the file to trash using trash-cli.
 label trash, has trash-put = trash-put -- "$@"
 label trash = mkdir -p -- ${XDG_DATA_DIR:-$HOME/.ranger}/ranger-trash; mv -- "$@" ${XDG_DATA_DIR:-$HOME/.ranger}/ranger-trash
