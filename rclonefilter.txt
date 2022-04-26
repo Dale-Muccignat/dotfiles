@@ -1,3 +1,4 @@
-/OneDrive/Writting/**
-/OneDrive/Teaching/**
 /OneDrive/Packages/**
+/OneDrive/Projects/**
+/OneDrive/Scripts/**
+/OneDrive/Writting/**
