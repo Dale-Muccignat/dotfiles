@@ -341,7 +341,7 @@ for_window [class="Spotify"] move to workspace $ws10
 # bindsym $mod+o exec i3-sensible-terminal -- zsh -c ranger
 
 #program shortcuts
-bindsym $mod+c exec chromium
+bindsym $mod+c exec google-chrome-stable
 bindsym $mod+t exec todoist
 #bindsym $mod+o exec ranger
 bindsym $mod+n exec i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '

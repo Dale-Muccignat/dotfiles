@@ -257,6 +257,7 @@ bindsym $mod+r mode "resize"
 #}
 bar {
         status_command i3status
+        tray_output primary
 }
 set $Locker i3lock && sleep 1
 
@@ -302,7 +303,7 @@ exec --no-startup-id xset r rate 300 30
 # Wallpaper!
 exec --no-startup-id nitrogen --restore &
 # Monitor switch
-exec --no-startup-id xrandr --output DVI-D-0 --right-of HDMI-A-0
+# exec --no-startup-id xrandr --output DVI-D-0 --right-of HDMI-A-0
 focus_follows_mouse no
 # emacs server
 exec --no-startup-id emacs --daemon
