@@ -15,7 +15,7 @@ dotfiles checkout
 
 ```
 sudo pacman -S zsh sshfs picom nitrogen fzf xorg-xset rofi ranger gnome gvim
-yay -S ttf-nerd-fonts-symbols oh-my-zsh-git auto-cpufreq google-chrome
+yay -S nerd-fonts-complete oh-my-zsh-git auto-cpufreq google-chrome
 ```
 
 ## Post config
