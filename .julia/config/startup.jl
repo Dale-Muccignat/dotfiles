@@ -5,7 +5,7 @@ using Revise
 ENV["PLOTS_DEFAULT_BACKEND"] = "PyPlot"
 ENV["JULIA_NO_VERIFY_HOSTS"]="github.com"
 ENV["JULIA_DISABLE_AMDGPU_ARTIFACTS"] = 1
-ENV["JULIA_PKG_DEVDIR"]= "/home/mirage_neos/OneDrive/PhD/Packages/"
+ENV["JULIA_PKG_DEVDIR"]= ENV["HOME"]*"/ownCloud/OneDrive/Packages/"
 ENV["PYTHON"]= "/usr/bin/python3"
 using Plots, JLD2, InteractiveUtils, RemoteREPL, Pluto, DPlots
 InteractiveUtils.define_editor(

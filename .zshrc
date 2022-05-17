@@ -87,9 +87,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='emacsclient -c'
+  # export EDITOR='emacsclient -c'
+  export EDITOR=/usr/bin/vim
 else
-  export EDITOR='emacsclient -c'
+  # export EDITOR='emacsclient -c'
+  export EDITOR=/usr/bin/vim
 fi
 
 # Compilation flags
@@ -106,10 +108,10 @@ alias ohmyzsh="nano ~/.oh-my-zsh"
 
 # Rsync/ssh
 alias hpc="ssh hpc"
-alias h2l="rsync -aP --exclude='.*' hpc:~/ ~/ownCloud/OneDrive/HPC"
-alias l2h="rsync -aP --exclude='.*' ~/ownCloud/OneDrive//HPC/ hpc:~"
+alias h2l="rsync -aP --exclude='.*' hpc:~/ ~/HPC"
+alias l2h="rsync -aP --exclude='.*' ~/HPC/ hpc:~"
 alias p2h="rsync -aP ~/ownCloud/OneDrive/Packages/ hpc:~/Packages"
-alias p2l="rsync -aP ~/ownCloud/OneDrive/Packages/ ~/ownCloud/OneDrive/HPC/Packages"
+alias p2l="rsync -aP ~/ownCloud/OneDrive/Packages/ ~//HPC/Packages"
 
 # git
 alias gs="git status"
@@ -124,19 +126,19 @@ alias cdhpc="cd ~/OneDrive/HPC"
 
 alias j="'julia' --sysimage ${HOME}/.julia/config/custom_sysimage.so"
 
-alias pop="wine ${HOME}/.wine/dosdevices/c:/Program\ Files/Harzing\'s\ Publish\ or\ Perish\ 7/pop7win.exe &|" 
+alias pop="wine ${HOME}/.wine/dosdevices/c:/Program\ Files/Harzing\'s\ Publish\ or\ Perish\ 8/pop8win.exe &|" 
 ## Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dotfilesadd='dotfiles add ~/.screenlayout ~/.gitignore ~/.julia/config/startup.jl ~/.config/picom ~/.config/i3blocks ~/.config/i3status ~/.config/i3 ~/.config/ranger ~/.emacs.d ~/.ssh/config ~/.lyx ~/.zshenv ~/.zshrc ~/bin ~/.config/nitrogen ~/rclonefilter.txt'
+alias dotfilesadd='dotfiles add ~/.vimrc ~/.screenlayout ~/.gitignore ~/.julia/config/startup.jl ~/.config/picom ~/.config/i3blocks ~/.config/i3status ~/.config/i3 ~/.config/ranger ~/.emacs.d ~/.ssh/config ~/.lyx ~/.zshenv ~/.zshrc ~/bin ~/.config/nitrogen ~/rclonefilter.txt'
 ## sshfs
 alias mountdesktop='sshfs desktop:/home/mirage_neos ~/Desktop'
 alias s='stonks -e -t "icon"'
 alias update='sudo pacman -Syu'
 alias dt='date +%Y%m%d.%H%M%S'
-alias backup='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
+alias backup='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
 # alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
-alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress'
-alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress'
+alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress --create-empty-src-dirs'
+alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
 ############################
 # * Ranger
 

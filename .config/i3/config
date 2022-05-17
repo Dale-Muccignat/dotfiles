@@ -180,6 +180,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+set $Locker i3lock && sleep 1
+
 # Gives me commands for system lock. hit $mod then pause
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -203,6 +205,7 @@ bindsym $mod+c exec google-chrome-stable
 exec --no-startup-id $HOME/.screenlayout/layout.sh &
 exec --no-startup-id nitrogen --restore &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
+
 # Display manager that got rid of screentearing, who knows why
 exec --no-startup-id "picom --experimental-backends --config $HOME/.config/picom/picom.conf"
 
@@ -213,3 +216,22 @@ exec --no-startup-id xset r rate 300 30
 for_window [class=".*"] border pixel 2 
 gaps inner 10
 gaps outer 5
+
+focus_follows_mouse no
+
+# Spotify
+# Pause
+
+bindsym $mod+F11 exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+
+#Previous:
+
+bindsym $mod+F10 exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+
+#Next:
+
+bindsym $mod+F12 exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+
+#brightness
+bindsym XF86MonBrightnessUp exec light -A 1
+bindsym XF86MonBrightnessDown exec light -U 1
