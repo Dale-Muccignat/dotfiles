@@ -3,6 +3,7 @@ Plug 'osyo-manga/vim-over'
 Plug 'zhou13/vim-easyescape'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'preservim/nerdcommenter'
+Plug 'arthurxavierx/vim-unicoder'
 filetype plugin on
 let g:NERDCustomDelimiters = { 'julia' : { 'left' : '#', 'right' : '' } }
 let g:easyescape_chars = { "j": 1, "k": 1 }
