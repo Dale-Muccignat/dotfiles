@@ -5,6 +5,8 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'arthurxavierx/vim-unicoder'
 filetype plugin on
+let mapleader=","
+let g:NERDCreateDefaultMappings = 1
 let g:NERDCustomDelimiters = { 'julia' : { 'left' : '#', 'right' : '' } }
 let g:easyescape_chars = { "j": 1, "k": 1 }
 let g:easyescape_timeout = 100

@@ -245,6 +245,7 @@ bindsym $mod+c exec google-chrome-stable
 # My bar -> Polybar
 exec --no-startup-id $HOME/.screenlayout/layout.sh &
 exec --no-startup-id nitrogen --restore &
+exec --no-startup-id blueman-applet &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 
 # Display manager that got rid of screentearing, who knows why
