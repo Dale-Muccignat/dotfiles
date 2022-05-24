@@ -4,6 +4,7 @@ Plug 'zhou13/vim-easyescape'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'arthurxavierx/vim-unicoder'
+Plug 'chrisbra/unicode.vim'
 filetype plugin on
 let mapleader=","
 let g:NERDCreateDefaultMappings = 1
