@@ -71,6 +71,8 @@ export UPDATE_ZSH_DAYS=30
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+
+export TERMCMD=gnome-terminal
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git fzf zsh-completions ssh-agent)
@@ -129,7 +131,7 @@ alias j="'julia' --sysimage ${HOME}/.julia/config/custom_sysimage.so"
 alias pop="wine ${HOME}/.wine/dosdevices/c:/Program\ Files/Harzing\'s\ Publish\ or\ Perish\ 8/pop8win.exe &|" 
 ## Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dotfilesadd='dotfiles add ~/.vimrc ~/.gitignore ~/.julia/config/startup.jl ~/.config/picom ~/.config/i3blocks ~/.config/i3status ~/.config/i3 ~/.config/ranger ~/.emacs.d ~/.ssh/config ~/.lyx ~/.zshenv ~/.zshrc ~/bin ~/.config/nitrogen ~/rclonefilter.txt'
+alias dotfilesadd='dotfiles add ~/.config/polybar ~/.vimrc ~/.screenlayout ~/.gitignore ~/.julia/config/startup.jl ~/.config/picom ~/.config/i3blocks ~/.config/i3status ~/.config/i3 ~/.config/ranger ~/.emacs.d ~/.ssh/config ~/.lyx ~/.zshenv ~/.zshrc ~/bin ~/.config/nitrogen/wallpapers ~/rclonefilter.txt'
 ## sshfs
 alias mountdesktop='sshfs desktop:/home/mirage_neos ~/Desktop'
 alias s='stonks -e -t "icon"'
