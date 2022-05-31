@@ -2,7 +2,9 @@ push!(LOAD_PATH,".")
 push!(LOAD_PATH,"~/OneDrive/PhD/Packages")
 push!(LOAD_PATH,"~/OneDrive/PhD/Scripts")
 using Revise
-ENV["PLOTS_DEFAULT_BACKEND"] = "PyPlot"
+ENV["MPLBACKEND"]="tkagg"
+ENV["PLOTS_DEFAULT_BACKEND"] = "PlotlyJS"
+ENV["JULIA_AMDGPU_DISABLE_ARTIFACTS"] = 1
 ENV["JULIA_NO_VERIFY_HOSTS"]="github.com"
 ENV["JULIA_DISABLE_AMDGPU_ARTIFACTS"] = 1
 ENV["JULIA_PKG_DEVDIR"]= ENV["HOME"]*"/ownCloud/OneDrive/Packages/"
