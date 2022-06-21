@@ -32,3 +32,4 @@ set statusline=%f
 set statusline+=%=
 set statusline+=\ %l:%c
 hi StatusLine ctermfg=DarkBlue ctermbg=White
+silent! source $VIMRUNTIME/defaults.vim
