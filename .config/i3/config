@@ -222,6 +222,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#Screenshot
+bindsym Print exec --no-startup-id flameshot gui -c -p ~/Pictures/captures
+
 set $Locker i3lock && sleep 1
 
 # Gives me commands for system lock. hit $mod then pause
@@ -250,6 +253,8 @@ exec --no-startup-id blueman-applet &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 exec_always --no-startup-id dunst &
 exec_always --no-startup-id nextcloud &
+exec_always --no-startup-id flameshot &
+
 
 
 # Display manager that got rid of screentearing, who knows why
@@ -257,6 +262,7 @@ exec --no-startup-id "picom --experimental-backends --config $HOME/.config/picom
 
 # Fast
 exec --no-startup-id xset r rate 300 30
+exec_always --no-startup-id xset s off -dpms
 
 # gaps
 for_window [class=".*"] border pixel 2 
