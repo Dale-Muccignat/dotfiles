@@ -7,8 +7,15 @@ polybar-msg cmd quit
 # killall -q polybar
 
 # Launch bar1 and bar2
-echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
-polybar main 2>&1 | tee -a /tmp/polybar1.log & disown
-polybar secondary 2>&1 | tee -a /tmp/polybar2.log & disown
-
-echo "Bars launched..."
+if type "xrandr"; then
+  for m in $(polybar --list-monitors | cut -d":" -f1); do
+	  is_primary=$(polybar --list-monitors | grep $m | grep "primary")
+	  if ["$is_primary" = ""]; then
+	    MONITOR=$m polybar --reload secondary &
+	  else
+	    PRIMARY=$m polybar --reload main &
+	  fi
+  done
+else
+  polybar --reload main &
+fi

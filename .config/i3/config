@@ -224,6 +224,7 @@ bindsym $mod+r mode "resize"
 
 #Screenshot
 bindsym Print exec --no-startup-id flameshot gui -c -p ~/Pictures/captures
+bindsym $mod+Print exec --no-startup-id flameshot screen -c -p ~/Pictures/captures
 
 set $Locker i3lock && sleep 1
 
@@ -253,7 +254,6 @@ exec --no-startup-id blueman-applet &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 exec_always --no-startup-id dunst &
 exec_always --no-startup-id nextcloud &
-exec_always --no-startup-id flameshot &
 
 
 
