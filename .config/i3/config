@@ -203,10 +203,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -244,10 +244,12 @@ bindsym $mod+x mode "$mode_system"
 bindsym $mod+c exec google-chrome-stable
 
 # My bar -> Polybar
-exec --no-startup-id $HOME/.screenlayout/layout.sh &
+#exec --no-startup-id $HOME/.screenlayout/layout.sh &
 exec --no-startup-id nitrogen --restore &
 exec --no-startup-id blueman-applet &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
+exec_always --no-startup-id dunst &
+
 
 # Display manager that got rid of screentearing, who knows why
 exec --no-startup-id "picom --experimental-backends --config $HOME/.config/picom/picom.conf"
@@ -257,7 +259,7 @@ exec --no-startup-id xset r rate 300 30
 
 # gaps
 for_window [class=".*"] border pixel 2 
-gaps inner 5
+gaps inner 2
 gaps outer 0
 
 focus_follows_mouse no
