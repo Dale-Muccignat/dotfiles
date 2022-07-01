@@ -94,7 +94,9 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec rofi -show run -sidebar-mode
+#bindsym $mod+d exec rofi -show run -sidebar-mode
+bindsym $mod+g exec bash ~/.config/rofi/scripts/rofi-wrapper.sh games &
+bindsym $mod+d exec bash ~/.config/rofi/scripts/rofi-wrapper.sh run &
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -247,7 +249,6 @@ mode "$mode_system" {
 bindsym $mod+x mode "$mode_system"
 
 bindsym $mod+c exec google-chrome-stable
-bindsym $mod+g exec bash ~/.config/rofi/scripts/rofi-wrapper.sh games &
 
 # My bar -> Polybar
 #exec --no-startup-id $HOME/.screenlayout/layout.sh &
