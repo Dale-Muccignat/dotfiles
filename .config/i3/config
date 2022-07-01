@@ -246,6 +246,7 @@ mode "$mode_system" {
 bindsym $mod+x mode "$mode_system"
 
 bindsym $mod+c exec google-chrome-stable
+bindsym $mod+g exec bash ~/.config/rofi/scripts/rofi-wrapper.sh games &
 
 # My bar -> Polybar
 #exec --no-startup-id $HOME/.screenlayout/layout.sh &
