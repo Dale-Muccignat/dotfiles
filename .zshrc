@@ -141,6 +141,8 @@ alias backup='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"
 # alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
 alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress --create-empty-src-dirs'
 alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
+# Wallpepers
+alias wallpaper='nitrogen ~/.config/nitrogen/wallpapers/'
 ############################
 # * Ranger
 
