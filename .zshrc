@@ -122,25 +122,24 @@ alias gc="git commit -m"
 alias gp="git push"
 alias gl="git log --oneline"
 
-# Common locations
-alias cdpackages="cd ~/OneDrive/PhD/Packages"
-alias cdhpc="cd ~/OneDrive/HPC"
-
 alias j="'julia' --sysimage ${HOME}/.julia/config/custom_sysimage.so"
 
 alias pop="wine ${HOME}/.wine/dosdevices/c:/Program\ Files/Harzing\'s\ Publish\ or\ Perish\ 8/pop8win.exe &|" 
 ## Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias dotfilesadd='dotfiles add ~/.config/rofi ~/.config/flameshot ~/.config/gtk-4.0 ~/.config/gtk-3.0 ~/.config/dunst ~/.config/polybar ~/.vimrc ~/.screenlayout ~/.gitignore ~/.julia/config/startup.jl ~/.config/picom ~/.config/i3blocks ~/.config/i3status ~/.config/i3 ~/.config/ranger ~/.emacs.d ~/.ssh/config ~/.lyx ~/.zshenv ~/.zshrc ~/bin ~/.config/nitrogen/wallpapers ~/rclonefilter.txt'
+
 ## sshfs
 alias mountdesktop='sshfs desktop:/home/dale/ ~/Desktop'
-alias s='stonks -e -t "icon"'
+
 alias update='sudo pacman -Syu'
 alias dt='date +%Y%m%d.%H%M%S'
-alias backup='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
+alias backup='borg create -C lz4 --progress ~/Backup::'{hostname}-{now}' Nextcloud'
+alias backupwork='borg create -C lz4 --progress ~/Backup_Work::'{hostname}-{now}' ownCloud'
+#alias backupwork='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
 # alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
-alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress --create-empty-src-dirs'
-alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
+#alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress --create-empty-src-dirs'
+#alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
 # Wallpepers
 alias wallpaper='nitrogen ~/.config/nitrogen/wallpapers/'
 ############################
