@@ -13,6 +13,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'luochen1990/rainbow'
 "COC
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 inoremap <silent><expr> <TAB>
@@ -34,3 +35,5 @@ cnoremap kj <ESC>
 "set statusline+=\ %l:%c
 "hi StatusLine ctermfg=DarkBlue ctermbg=White
 silent! source $VIMRUNTIME/defaults.vim
+let g:airline_powerline_fonts = 1
+let g:airline_theme='dark'
