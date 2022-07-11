@@ -264,14 +264,14 @@ exec_always --no-startup-id autotiling &
 
 
 # Display manager that got rid of screentearing, who knows why
-exec --no-startup-id "picom --experimental-backends --config $HOME/.config/picom/picom.conf"
+exec --no-startup-id picom --experimental-backends &
 
 # Fast
 exec --no-startup-id xset r rate 300 30
 exec_always --no-startup-id xset s off -dpms
 
 # gaps
-for_window [class=".*"] border pixel 2 
+for_window [class=".*"] border pixel 0 
 gaps inner 2
 gaps outer 0
 
