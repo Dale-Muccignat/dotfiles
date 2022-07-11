@@ -253,7 +253,7 @@ bindsym $mod+c exec google-chrome-stable
 # My bar -> Polybar
 #exec --no-startup-id $HOME/.screenlayout/layout.sh &
 exec --no-startup-id nitrogen --restore &
-exec --no-startup-id blueman-applet &
+exec --no-startup-id blueberry-tray &
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 exec_always --no-startup-id dunst &
