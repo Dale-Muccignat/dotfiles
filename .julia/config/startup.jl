@@ -3,7 +3,7 @@ push!(LOAD_PATH,"~/OneDrive/PhD/Packages")
 push!(LOAD_PATH,"~/OneDrive/PhD/Scripts")
 using Revise
 ENV["MPLBACKEND"]="tkagg"
-ENV["PLOTS_DEFAULT_BACKEND"] = "GR"
+ENV["PLOTS_DEFAULT_BACKEND"] = "PyPlot"
 ENV["JULIA_AMDGPU_DISABLE_ARTIFACTS"] = 1
 ENV["JULIA_NO_VERIFY_HOSTS"]="github.com"
 ENV["JULIA_DISABLE_AMDGPU_ARTIFACTS"] = 1

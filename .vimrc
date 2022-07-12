@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'osyo-manga/vim-over'
 Plug 'zhou13/vim-easyescape'
-Plug 'JuliaEditorSupport/julia-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'jpalardy/vim-slime'
 Plug 'terryma/vim-multiple-cursors'
