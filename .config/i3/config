@@ -69,7 +69,8 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xautolock -time 10 -locker "i3lock-fancy-rapid 5 3" &
+#exec --no-startup-id xautolock -time 10 -locker "i3lock-fancy-rapid 5 3" &
+exec --no-startup-id xautolock -time 10 -locker "light-locker-command -l" &
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -230,7 +231,7 @@ bindsym Print exec --no-startup-id flameshot gui -c -p ~/Pictures/captures
 bindsym $mod+Print exec --no-startup-id flameshot screen -c -p ~/Pictures/captures
 
 #set $Locker i3lock && sleep 1
-set $Locker i3lock-fancy-rapid 5 3 && sleep 1
+set $Locker light-locker-command -l && sleep 1
 # Gives me commands for system lock. hit $mod then pause
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -254,6 +255,7 @@ bindsym $mod+c exec google-chrome-stable
 #exec --no-startup-id $HOME/.screenlayout/layout.sh &
 exec --no-startup-id nitrogen --restore &
 exec --no-startup-id blueman &
+exec --no-startup-id light-locker &
 exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 exec_always --no-startup-id dunst &
@@ -275,6 +277,14 @@ for_window [class=".*"] border pixel 0
 gaps inner 2
 gaps outer 5
 
+set $mode_gaps Toggle gaps: (1) on (2) off
+bindsym $mod+m mode "$mode_gaps"
+mode "$mode_gaps" {
+    bindsym 1 mode "default", gaps inner all set 5, gaps outer all set 10
+    bindsym 2 mode "default", gaps inner all set 1, gaps outer all set 1
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
 focus_follows_mouse no
 
 # Spotify

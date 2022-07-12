@@ -36,4 +36,4 @@ cnoremap kj <ESC>
 "hi StatusLine ctermfg=DarkBlue ctermbg=White
 silent! source $VIMRUNTIME/defaults.vim
 let g:airline_powerline_fonts = 1
-let g:airline_theme='dark'
+let g:airline_theme='murmur'
