@@ -9,12 +9,12 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'tpope/vim-fugitive'
 "Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 "Plug 'roxma/nvim-completion-manager'  " optional
-Plug 'luochen1990/rainbow'
-"COC
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+"Plug 'junegunn/rainbow_parentheses.vim'
+"Plug 'frazrepo/vim-rainbow'
 call plug#end()
-let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ CheckBackspace() ? "\<TAB>" :
@@ -28,11 +28,13 @@ let g:easyescape_chars = { "j": 1, "k": 1 }
 let g:easyescape_timeout = 100
 cnoremap jk <ESC>
 cnoremap kj <ESC>
-"set laststatus=2
-"set statusline=%f
-"set statusline+=%=
-"set statusline+=\ %l:%c
-"hi StatusLine ctermfg=DarkBlue ctermbg=White
 silent! source $VIMRUNTIME/defaults.vim
 let g:airline_powerline_fonts = 1
 let g:airline_theme='murmur'
+highlight! link SignColumn LineNr
+highlight GitGutterAdd ctermfg=2
+highlight GitGutterChange ctermfg=3
+highlight GitGutterDelete ctermfg=1
+highlight GitGutterChangeDelete ctermfg=4
+map <F1> :%s/\s\+$//e
+

@@ -70,7 +70,7 @@ exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 #exec --no-startup-id xautolock -time 10 -locker "i3lock-fancy-rapid 5 3" &
-exec --no-startup-id xautolock -time 10 -locker "light-locker-command -l" &
+#exec --no-startup-id xautolock -time 10 -locker "light-locker-command -l" &
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -86,9 +86,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -321,3 +318,23 @@ bindsym XF86MonBrightnessUp exec light -A 1
 bindsym XF86MonBrightnessDown exec light -U 1
 
 bindsym $mod+n exec i3-input -F 'rename workspace to "%s"' -P 'New name for this workspace: '
+
+#Default workspaces
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+equal move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+equal scratchpad show
+
+#bindsym $mod+Shift+minus mark "theta", move scratchpad
+#bindsym $mod+minus [con_mark="theta"] scratchpad show
+
+bindsym $mod+shift+f exec "i3-scratchpad -t -m t -atc kitty --hold sh -c ranger"
+bindsym $mod+shift+m exec "i3-scratchpad -t -d 75%x100% -m r -atr spotify"
+bindsym $mod+shift+b exec "i3-scratchpad -t -d 75%x100% -m r -atr jabref"
+bindsym $mod+shift+s exec "i3-scratchpad -t -d 75%x100% -m l -atl slack"
+bindsym $mod+shift+d exec "i3-scratchpad -t -d 75%x100% -m l -atl discord"
+# start a terminal
+bindsym $mod+Return exec kitty
+#bindsym $mod+Return exec "i3-scratchpad -t -m t -atc kitty"
+
