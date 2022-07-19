@@ -137,9 +137,9 @@ alias dt='date +%Y%m%d.%H%M%S'
 alias backup='borg create -C lz4 --progress ~/Backup::'{hostname}-{now}' Nextcloud'
 alias backupwork='borg create -C lz4 --progress ~/Backup_Work::'{hostname}-{now}' ownCloud'
 #alias backupwork='rclone sync ~/ownCloud/ CloudStor:/Files/ --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
-# alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
-#alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress --create-empty-src-dirs'
-#alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
+ #alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --backup-dir=CloudStor:"/archive/$(dt)" --progress'
+alias download='rclone sync CloudStor:/Files/ ~/ownCloud/ --include-from ~/rclonefilter.txt --progress --create-empty-src-dirs'
+alias upload='rclone sync ~/ownCloud/ CloudStor:/Files/ --include-from ~/rclonefilter.txt --backup-dir=CloudStor:"/archive/$(dt)" --progress --create-empty-src-dirs'
 # Wallpepers
 alias wallpaper='nitrogen ~/.config/nitrogen/wallpapers/'
 ############################

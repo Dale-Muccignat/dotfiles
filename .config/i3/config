@@ -336,5 +336,6 @@ bindsym $mod+shift+s exec "i3-scratchpad -t -d 75%x100% -m l -atl slack"
 bindsym $mod+shift+d exec "i3-scratchpad -t -d 75%x100% -m l -atl discord"
 # start a terminal
 bindsym $mod+Return exec kitty
+bindsym $mod+shift+Return exec kitty --hold sh -c "ssh desktop"
 #bindsym $mod+Return exec "i3-scratchpad -t -m t -atc kitty"
 

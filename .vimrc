@@ -37,4 +37,6 @@ highlight GitGutterChange ctermfg=3
 highlight GitGutterDelete ctermfg=1
 highlight GitGutterChangeDelete ctermfg=4
 map <F1> :%s/\s\+$//e
-
+set tabstop=4
+set shiftwidth=4
+set expandtab
