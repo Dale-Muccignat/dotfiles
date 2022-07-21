@@ -95,6 +95,8 @@ bindsym $mod+q kill
 #bindsym $mod+d exec rofi -show run -sidebar-mode
 bindsym $mod+g exec bash ~/.config/rofi/scripts/rofi-wrapper.sh games &
 bindsym $mod+d exec bash ~/.config/rofi/scripts/rofi-wrapper.sh run &
+#bindsym $mod+d exec bash ~/.config/rofi/bin/launcher_colorful
+
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -259,7 +261,6 @@ exec_always --no-startup-id dunst &
 #exec_always --no-startup-id nextcloud &
 #exec_always --no-startup-id owncloud &
 exec_always --no-startup-id autotiling &
-
 
 
 # Display manager that got rid of screentearing, who knows why

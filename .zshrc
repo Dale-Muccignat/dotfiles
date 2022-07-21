@@ -185,3 +185,4 @@ fi
 
 
 #eval $(thefuck --alias)
+export PATH=$HOME/.config/rofi/bin:$PATH

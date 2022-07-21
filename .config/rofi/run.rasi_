@@ -1,0 +1,18 @@
+listview {
+    columns:                        6;
+    padding:                        4px;
+}
+
+@import "launcher"
+
+element-text {
+    padding:                        4px 4px;
+    border:                         4px 4px solid 4px 4px;
+    border-color:                   transparent;
+    border-radius:                  8;
+    width:                          150px;
+}
+
+element-text selected {
+    border-color:                   @primary;
+}
