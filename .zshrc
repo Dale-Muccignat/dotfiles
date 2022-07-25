@@ -9,11 +9,11 @@ export ZSH="/usr/share/oh-my-zsh/"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="random"
 #ZSH_THEME="sorin"
-#ZSH_THEME="example"
+ZSH_THEME="example"
 #ZSH_THEME="fletcherm"
 #ZSH_THEME="wezm"
 #ZSH_THEME="minimal"
-ZSH_THEME="awesomepanda"
+#ZSH_THEME="awesomepanda"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

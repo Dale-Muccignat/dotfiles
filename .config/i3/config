@@ -94,8 +94,8 @@ bindsym $mod+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run
 #bindsym $mod+d exec rofi -show run -sidebar-mode
 bindsym $mod+g exec bash ~/.config/rofi/scripts/rofi-wrapper.sh games &
-bindsym $mod+d exec bash ~/.config/rofi/scripts/rofi-wrapper.sh run &
-#bindsym $mod+d exec bash ~/.config/rofi/bin/launcher_colorful
+#bindsym $mod+d exec bash ~/.config/rofi/scripts/rofi-wrapper.sh run &
+bindsym $mod+d exec bash ~/.config/rofi/launchers/text/launcher.sh &
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
