@@ -14,6 +14,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 "Plug 'junegunn/rainbow_parentheses.vim'
 "Plug 'frazrepo/vim-rainbow'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -40,3 +41,5 @@ map <F1> :%s/\s\+$//e
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set termguicolors
+set foldmethod=indent

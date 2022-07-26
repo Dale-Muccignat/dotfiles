@@ -331,10 +331,10 @@ bindsym $mod+equal scratchpad show
 #bindsym $mod+minus [con_mark="theta"] scratchpad show
 
 bindsym $mod+shift+f exec "i3-scratchpad -t -m t -atc kitty --hold sh -c ranger"
-bindsym $mod+shift+m exec "i3-scratchpad -t -d 75%x100% -m r -atr spotify"
-bindsym $mod+shift+b exec "i3-scratchpad -t -d 75%x100% -m r -atr jabref"
-bindsym $mod+shift+s exec "i3-scratchpad -t -d 75%x100% -m l -atl slack"
-bindsym $mod+shift+d exec "i3-scratchpad -t -d 75%x100% -m l -atl discord"
+bindsym $mod+shift+m exec "i3-scratchpad -t -d 50%x50% -m t -atr spotify"
+bindsym $mod+shift+b exec "i3-scratchpad -t -d 50%x50% -m t -atr jabref"
+bindsym $mod+shift+s exec "i3-scratchpad -t -d 50%x50% -m t -atl slack"
+bindsym $mod+shift+d exec "i3-scratchpad -t -d 50%x50% -m t -atl discord"
 # start a terminal
 bindsym $mod+Return exec kitty
 bindsym $mod+shift+Return exec kitty --hold sh -c "ssh desktop"
