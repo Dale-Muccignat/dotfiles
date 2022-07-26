@@ -271,9 +271,10 @@ exec --no-startup-id xset r rate 300 30
 exec_always --no-startup-id xset s off -dpms
 
 # gaps
-for_window [class=".*"] border pixel 0 
+for_window [class=".*"] border pixel 1 
 gaps inner 2
 gaps outer 5
+border_radius 10
 
 set $mode_gaps Toggle gaps: (1) on (2) off
 bindsym $mod+m mode "$mode_gaps"
